@@ -10,12 +10,12 @@ body{
 
 @font-face{
     font-family: Cubos;
-    src: url(../fontes/Cubos.woff);
+    src: url(../../assets/fonts/Cubos.woff);
 }
 
 @font-face {
     font-family: Quicksand;
-    src: url(../fontes/Quicksand_Book.woff);
+    src: url(../../assets/fonts/Quicksand_Book.woff);
 }
 
 /*-------------------------------------------------------*/
@@ -71,27 +71,27 @@ header{
 
 .pesquisa{
     height: 30px;
-    width: 300px;
+    width: 400px;
     padding-left: 8px;
     padding-bottom: 3px;
-    background-image: url(../imagens/lupa-arredondada.png);
+    background-image: url(../../assets/images/lupa-arredondada.png);
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: 265px;
+    background-position: 365px;
     border-color: #928f8f;
     border-radius: 20px;
     margin-left: 320px;
 }
 
 #usuario{
-    width: 98px;
-    margin-top: 10px;
+    width: 120px;
+    margin-top: 22px;
     margin-left: 5px;
 }
 
 #usuario img{
     float: left;
-    margin: 0;
+    margin:0;
 }
 
 #usuario p{
@@ -113,7 +113,7 @@ header{
 /*-------------------------------------------------------*/
 /*Corpo da página*/
 #topo{
-    background: url(../imagens/topo1.png) no-repeat;
+    background-image: url("../../assets/images/topo1.png");
     width: 100%;
     height: 676px;
 }
