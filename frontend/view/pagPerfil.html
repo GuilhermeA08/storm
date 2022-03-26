@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../assets/images/cloud-flash.png" type="images/x-icon">
-        <title>Storm</title>
+        <link rel="shortcut icon" href="imagens/cloud-flash.png" type="image/x-icon">
+        <title>Catalógo de produtos</title>
 
         <!--Estilos CSS-->
-        <link rel="stylesheet" href="../styles/css/pagCatalogoCompra.css" type="text/css">
+        <link rel="stylesheet" href="../styles/css/pagPerfil.css" type="text/css">
 
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -35,9 +35,19 @@
 
                 <input class="pesquisa" type="text" name="pesquisar" id="pesquisa" placeholder="O que você vai comprar hoje?">
 
-                <a id="usuario" href="pagPerfil.html">
-                    <img src="../assets/images/img-usuario.png" alt=""> <p>Usuário</p>
-                </a>
+                <div id="usuario">
+                    <img src="../assets/images/img-usuario.png" alt=""> 
+                    
+                    <div class="btn-group"  style="float: right;">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Usuário</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pedidos</a></li>
+                            <li><a class="dropdown-item" href="#">Dados</a></li>
+                            <li><a class="dropdown-item" href="#">Endereçs</a></li>
+                        </ul>
+                    </div>
+
+                </div>
 
                 <a id="carrinho" href="">
                     <img src="../assets/images/sacola-de-compras-quadrada-com-alca.png" alt="carrinho" width="27px">
@@ -47,61 +57,27 @@
 
         </header> <!--Fim do cabeçalho-->
 
-        <main> <!--Inico do corpo da página-->
-
+        <main> <!--Inicio do corpo da página-->
             <div id="topo"> <!--Inicio do topo-->
-                    <a id="voltar"href="pagInicial.html" class="btn btn-outline-dark">Voltar</a>
+                <div class="usuario">
+                    <img src="../assets/images/img-usuario.png" alt="">
+                    <p>Olá, Usuário</p>
+                </div>
+
+                <div class="botoes">
+
+                    <a href="">Vender</a>
+                    <a href="">Meus Anúncios</a>
+
+                </div>
             </div> <!--Fim do topo-->
 
-            <div id="centro">
-            
-                  <div id="imagen-principal">
-                     <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="">
-                  </div>
-
-                   <div id="imagens-secundarias">
-                        <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="">
-                        <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="">
-                        <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="">
-                        <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="">
-                  </div>
-
-                   <div id="info-comprar">
-                    <h1>Produto 1 - Nova Linha Especial</h1>
-                    <h1>R$ 156,00</h1>
-                    <h2>10x 15,60 sem juros</h2>
-                
-                    <h3><img src="../assets/images/caminhao-de-entrega.png" alt="">entrega grátis</h3>
-                    <div id="adicionar-carrinho">
-                    <a href="pagCarrinho.html" class="btn btn-outline-dark">Adicionar ao Carrinho</a>
-                    </div>
-                    <div id="comprar-agora">
-                    <a href="pagCarrinho.html" class="btn btn-success">Comprar Agora</a>
-                    </div>
-            </div>
-
-                <div>
-                        <div id="descricao">
-                            <h2>Descrição</h2>
-                            <h3>Uma descrição de produto fornece detalhes sobre recursos, indicações, utilizações e benefícios para ajudar a gerar uma venda. A qualidade do texto pode estimular ou interromper a conversão, especialmente se não incluir informações que o visitante precisa para decidir pela compra.</h3>
-                            
-                        </div>
-                        <div id="descricao">
-                            <h2>Especificações Técnicas</h2>
-                            <h3>Marca: Nova marca <p></p>Modelo: Novo modelo <p></p> Voltagem: Bivolt</h3>
-                        </div>
-                </div>
-            </div>
-
-            <!--PRODUTOS RELACIONADOS-->
-
-            <div class="navegacao">
-
-                <h2>Produtos Relacionados</h2>
+            <div class="corpo">
+                <h2>Meus Pedidos</h2>
 
                 <div class="item">
                     <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item">
-                               
+                                
                     <h4>nome do produto</h4>
 
                     <h3>R$ 00,00</h3>
@@ -115,7 +91,7 @@
 
                 <div class="item">
                     <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item">
-                               
+                                
                     <h4>nome do produto</h4>
 
                     <h3>R$ 00,00</h3>
@@ -129,7 +105,7 @@
 
                 <div class="item">
                     <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item">
-                               
+                                
                     <h4>nome do produto</h4>
 
                     <h3>R$ 00,00</h3>
@@ -143,7 +119,7 @@
 
                 <div class="item">
                     <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item">
-                               
+                                
                     <h4>nome do produto</h4>
 
                     <h3>R$ 00,00</h3>
@@ -155,18 +131,12 @@
                     </div>
                 </div>
 
-                <div class="item">
-                    <img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item">
-                               
-                    <h4>nome do produto</h4>
-
-                    <h3>R$ 00,00</h3>
-                    <h5>0x 00,00 sem juros</h5>
-                    <h6>Entrega gratis</h6>
-
-                    <div>
-                        <a href="">Adicionar ao carrinho</a>
-                    </div>
+                <div class="paginas">
+                    <a href="">Anterir</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">Próximo</a>
                 </div>
 
             </div>
@@ -186,11 +156,8 @@
                 &copy; Copyright 2022-2022 Projeto PWEB <br>
                 Rua Francisco Mota Bairro, 572 - Pres. Costa e Silva, Mossoró - RN, 59625-900  UFERSA
 
-                
-
             </div>
 
         </footer> <!--Fim do rodapé-->
-        
+
     </body>
-</html>
