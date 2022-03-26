@@ -69,12 +69,22 @@ header{
     border-radius: 4px;
 }
 
-.espaco{
-    margin-left: 615px;
+.pesquisa{
+    height: 30px;
+    width: 400px;
+    padding-left: 8px;
+    padding-bottom: 3px;
+    background-image: url(../../assets/images/lupa-arredondada.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 365px;
+    border-color: #928f8f;
+    border-radius: 20px;
+    margin-left: 180px;
 }
 
 #usuario{
-    width: 100px;
+    width: 126px;
     margin-top: 10px;
     margin-left: 5px;
 }
@@ -102,122 +112,59 @@ header{
 
 /*-------------------------------------------------------*/
 /*Corpo da página*/
-
-.topo-catalogo{
-    background-image: url(../../assets/images/topo-catalogo.png);
-    height: 697px;
-}
-
-.pesquisa{
-    height: 50px;
-    width: 100%;
-    margin-top: 70px;
-    padding-left: 8px;
-    padding-bottom: 3px;
-    background-image: url(../../assets/images/lupa-arredondada.png);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 98%;
-    border-color: #928f8f;
-    border-radius: 16px;
-    font-size: 25px;
-}
-
-.categorias{
-    text-align: center;
-    margin: 30px 0 80px 0;
-}
-
-.categorias h2{
-    color: white;
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.categoria{
+main{
+    background: url("../../assets/images/fundo-perfil.png") no-repeat;
     background-color: white;
-    border: 4px solid black;
-    border-radius: 15px;
-    width: 132px;
-    height: 116px;
-    padding-top: 5px;
-    margin: 10px 20px 0 0;
-    display: inline-block;
 }
 
-.categoria img{
-    width: 65px;
-    height: 65px;
-}
-
-.categoria p{
-    font-family: 'Quicksand';
-    font-size: 20px;
-}
-
-.divisao{
+#topo{
     width: 100%;
-    height: 220px;
-    position: relative;
+    height: 310px;
 }
 
-.divisao img{
-    width: 339px;
-    height: 215px;
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-}
-
-.menu1{
-    background-color: #042630;
-    width: 100%;
-    height: 129px;
-    margin-top: 30px;
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menu1 ul{
-    list-style: none;
-    float: right;
-    margin: 40px 90px 0 0;
-}
-
-.menu1 ul li{
+.usuario{
+    width: 200px;
     float: left;
+    text-align: center;
+    margin: 30px 0 0 30px;
 }
 
-.menu1 ul li a{
-    text-decoration: none;
+.usuario img{
+    width: 127px;
+}
+
+.usuario p{
+    font-family: 'Quicksand';
+    font-size: 25px;
     color: white;
-    text-transform: uppercase;
-    font-family: 'Quicksand';
-    margin-left: 10px;
-    font-size: 30px;
-    font-weight: 1000;
-    margin-left: 50px;
 }
 
-.dados-pesquisa{
-    margin-top: 30px;
-    font-family: 'Quicksand';
-    color: black;
-}
-
-.colunas{
-    margin-top: 30px;
-    clear: both;
-}
-
-.coluna-principal{
-    width: 940px;
-    height: 1538px;
-    margin: 5px 15px 0 10px;
+.botoes{
+    height: 100px;
     float: right;
+    text-align: center;
+}
+
+.botoes a{
+    height: 32.5px;
+    width: 160px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: #00C389;
+    border: 3px solid #00C389;
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.botoes a:hover{
+    color: black;
+    background: white;
+    border: 3px solid #00C389;
+}
+
+.corpo{
+    padding: 20px;
 }
 
 .item{
@@ -226,19 +173,7 @@ header{
     background: #D0D6D6;
     padding: 10px;
     display: inline-block;
-    margin: 0 9px 40px 9px;
-
-}
-
-.item a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Quicksand';
-}
-
-.item:hover{
-    border: 1px solid black;
-    margin: 0 8.5px 40px 8.5px;
+    margin-right: 10px;
 }
 
 .item img{
@@ -281,7 +216,7 @@ header{
     text-align: center;
 }
 
-.item a.adicinar-carrinho{
+.item a{
     text-decoration: none;
     color: white;
     font-family: 'Quicksand';
@@ -290,6 +225,7 @@ header{
 .paginas{
     clear: both;
     text-align: center;
+    margin-top: 40px;
 }
 
 .paginas a{
@@ -303,12 +239,31 @@ header{
     margin-left: 5px;
 }
 
-.coluna-secundaria{
-    width: 351px;
-    height: 1538px;
-    border: 2px solid black;
-    border-radius: 4px;
-    margin: 5px 0 5px 15px;
-    padding: 10px;
+/*-------------------------------------------------------*/
+/*Rodapé*/
+footer{
+    background-color: #86B9B0;
+    margin-top: 10px;
+    font-family: 'Quicksand';
+    color: white;
+    padding: 5px 0 10px 0;
+    text-align: left;
+}
+
+footer ul{
+    list-style: none;
+    padding-bottom: 2px;
+}
+
+footer ul li{
     float: left;
+    margin-left: -35px;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-right: 70px;
+    font-weight: 1000;
 }
