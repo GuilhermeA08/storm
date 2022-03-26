@@ -1,0 +1,25 @@
+body {
+  background-image: url("../../assets/images/fundo\ login.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.comprar-button {
+  color: #00c389 !important;
+}
+
+.vender-button {
+  color: #00a1ab !important;
+}
+
+.enviar-button {
+  background-color: #00c389 !important;
+}
+
+#contato {
+  border: black, 1px, solid !important;
+}
