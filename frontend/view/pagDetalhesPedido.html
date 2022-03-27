@@ -56,68 +56,51 @@
 
         <main> <!--Inicio do corpo da página-->
             <div id="topo"> <!--Inicio do topo-->
-                <div class="usuario">
-                    <img src="../assets/images/img-usuario.png" alt="">
-                    <p>Olá, Usuário</p>
-                </div>
-
-                <div class="botoes">
-                    <a href="">Vender</a>
-                    <a href="">Meus Anúncios</a>
-                </div>
+                <a id="voltar"href="pagPerfil.html" class="btn btn-outline-dark" style="margin-top: 320px; margin-left: 20px;">Voltar</a>
             </div> <!--Fim do topo-->
 
-            <div class="corpo">
-                <h2>Meus Pedidos</h2>
-
-                <div class="item">
-                    <a href="../view/pagCatalogoCompra.html"><img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item"></a>
-                    
-                                
-                    <h4>nome do produto</h4>
-
-                    <h3>Pedido n° 0001</h3>
-                    <h5>Status: Em transporte</h5>
-                    <a href="pagDetalhesPedido.html"><h6 style="color:green">Detalhes</h6></a>
+            <div class="corpo" st>
+                <h2 style="margin-top: 60px;">Pedido n° 0001</h2>
+                <div class="card" style="width: 18rem; display: inline-block;">
+                    <a href="../view/pagCatalogoCompra.html"><img class="card-img-top" src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="Card image cap" style="padding: 40px;"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Produto 1 - Nova Linha Especial</h5>
+                      <p class="card-text">R$ 156,00</p>
+                      <p class="card-text">x1</p>
+                    </div>
                 </div>
 
-                <div class="item">
-                    <a href="../view/pagCatalogoCompra.html"><img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item"></a>
-                                
-                    <h4>nome do produto</h4>
-
-                    <h3>Pedido n° 0002</h3>
-                    <h5>Status: Em transporte</h5>
-                    <a href="pagDetalhesPedido.html"><h6 style="color:green">Detalhes</h6></a>
+                <div class="card" style="width: 1000px; display: inline-block;">
+                    <form>
+                        <div class="form-group">
+                            <label for="data">Data do Pedido:</label>
+                            <input type="text" class="form-control" value="14/03/2022" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="preco">Preço:</label>
+                            <input type="text" class="form-control" value="R$ 156,00" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="endereco">Endereço de entrega:</label>
+                            <input type="text" class="form-control" value="Endereço 1" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="frete">Valor do Frete:</label>
+                            <input type="text" class="form-control" value="Grátis" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="data">Método de Pagamento:</label>
+                            <input type="text" class="form-control" value="Cartão de crédito em 10x sem juros" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="data">Detalhes do pedido:</label>
+                            <textarea type="text" class="form-control" style="height: fit-content;" disabled>Uma descrição de produto fornece detalhes sobre recursos, indicações, utilizações e benefícios para ajudar a gerar uma venda.</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 20px; background-color:green">Rastreamento</button>
+                        <button type="submit" class="btn btn-outline-dark" style="margin-top: 20px;">Gerar Nota Fiscal</button>
+                      </form>
                 </div>
 
-                <div class="item">
-                    <a href="../view/pagCatalogoCompra.html"><img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item"></a>
-                                
-                    <h4>nome do produto</h4>
-
-                    <h3>Pedido n° 0003</h3>
-                    <h5>Status: Em transporte</h5>
-                    <a href="pagDetalhesPedido.html"><h6 style="color:green">Detalhes</h6></a>
-                </div>
-
-                <div class="item">
-                    <a href="../view/pagCatalogoCompra.html"><img src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="item"></a>
-                                
-                    <h4>nome do produto</h4>
-
-                    <h3>Pedido n° 0004</h3>
-                    <h5>Status: Entregue</h5>
-                    <a href="pagDetalhesPedido.html"><h6 style="color:green">Detalhes</h6></a>
-                </div>
-
-                <div class="paginas">
-                    <a href="">Anterior</a>
-                    <a href="">2</a>
-                    <a href="">3</a>
-                    <a href="">4</a>
-                    <a href="">Próximo</a>
-                </div>
 
             </div>
 
