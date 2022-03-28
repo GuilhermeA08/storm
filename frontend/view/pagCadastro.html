@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/css/pagLogin.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/cloud-flash.png"
+      type="images/x-icon"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Storm</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          color="black"
+          aria-current="page"
+          href="./pagInicial.html"
+          >home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link comprar-button" href="./pagCatalogoCompra.html"
+          >comprar</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link vender-button" href="#">vender</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" color="black" href="./pagContato.html">contato</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" color="black" href="#">ajuda</a>
+      </li>
+    </ul>
+
+    <!-- Main -->
+
+    <main class="container offset-7 col-4 align-self-end">
+      <!-- Logo Storm -->
+      <div class="d-grid mx-auto">
+        <img src="../assets/images/logo.png" alt="Logo" class="mx-auto my-4" />
+        <h6 class="mx-auto">
+          Está pronto para ter acesso à milhares de produtos e serviços com
+          apenas um click?
+        </h6>
+      </div>
+
+      <!-- Container principal -->
+      <div
+        class="d-grid justify-content-center border border-dark rounded bg-white"
+      >
+        <div class="container col-12">
+          <h3 class="my-4">
+            <span class="text-destaque"> Cadastre </span> aqui sua nova conta!
+          </h3>
+
+          <!-- Formulário -->
+          <form class="container">
+            <!-- E-mail -->
+            <div class="form-floating mb-3 col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingNome"
+                placeholder="Nome"
+              />
+              <label for="floatingNome">Nome</label>
+            </div>
+
+            <!-- Assunto -->
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingSobrenome"
+                placeholder="Senha"
+              />
+              <label for="floatingAssunto">Sobrenome</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="date"
+                class="form-control"
+                id="floatingData"
+                placeholder="Data"
+              />
+              <label for="floatingData">Data de nascimento</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingCPF"
+                placeholder="CPF"
+              />
+              <label for="floatingCPF">CPF</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingEmail"
+                placeholder="Email"
+              />
+              <label for="floatingEmail">Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Senha"
+              />
+              <label for="floatingAssunto">Senha</label>
+            </div>
+
+            <div class="d-grid col-12 mx-auto my-4">
+              <button type="button" class="btn btn-dark btn-lg">
+                Cadastre-se
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</html>
