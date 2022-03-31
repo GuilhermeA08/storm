@@ -1,0 +1,278 @@
+/*Configurações gerais*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    justify-items: center;
+}
+
+@font-face{
+    font-family: Cubos;
+    src: url(../../assets/fonts/Cubos.woff);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../../assets/fonts/Quicksand_Book.woff);
+}
+
+/*-------------------------------------------------------*/
+/*Cabeçalho*/
+header{
+    display: table;
+    width: 100%;
+    height: 20px;
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    font-family: Cubos;
+    color: black;
+    margin-left: 5px;
+    float: left;
+    padding-bottom: 6px;
+}
+
+#cabecalho ul{
+    margin: 0 0 0 3px;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+#cabecalho ul li{
+    float: left;
+    font-family: Quicksand;
+}
+
+#cabecalho ul li a{
+    display: block;
+    padding: 0 1em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: black;
+}
+
+#cabecalho ul li a.destaque{
+    color: #00C389;
+}
+
+#cabecalho ul a:hover{
+    font-weight: 800;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.pesquisa{
+    height: 30px;
+    width: 400px;
+    padding-left: 8px;
+    padding-bottom: 3px;
+    background-image: url(../../assets/images/lupa-arredondada.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 365px;
+    border-color: #928f8f;
+    border-radius: 20px;
+    margin-left: 180px;
+}
+
+#usuario{
+    width: 126px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#usuario img{
+    float: left;
+    margin:0;
+}
+
+#usuario p{
+    float: right;
+    margin-top: 3px;
+    color: black;
+    font-family: Quicksand;
+}
+
+#usuario p:hover{
+    font-weight: 800;
+}
+
+#carrinho{
+    margin-left: 20px;
+}
+
+/*-------------------------------------------------------*/
+/*Corpo da página*/
+main{
+    background: url("../../assets/images/fundo-perfil.png") repeat-x ;
+    background-color: white;
+    background-position: 0px -80px;
+}
+
+#topo{
+    width: 100%;
+    height: 310px;
+}
+
+#corpo h1{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 44px;
+}
+
+.usuario{
+    width: 200px;
+    float: left;
+    text-align: center;
+    margin: 30px 0 0 30px;
+}
+
+.usuario img{
+    width: 127px;
+}
+
+.usuario p{
+    font-family: 'Quicksand';
+    font-size: 25px;
+    color: white;
+}
+
+.botoes{
+    height: 100px;
+    float: right;
+    text-align: center;
+}
+
+.botoes a{
+    height: 32.5px;
+    width: 160px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: #00C389;
+    border: 3px solid #00C389;
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.botoes a:hover{
+    color: black;
+    background: white;
+    border: 3px solid #00C389;
+}
+
+.corpo{
+    padding: 20px;
+}
+
+.item{
+    width: 212px;
+    height: 260px;
+    background: #D0D6D6;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.item img{
+    width: 180px;
+    margin: 0 7px 0 7px;
+}
+
+.item h4{
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    color: #042630;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.item h3{
+    font-family: 'Quicksand';
+    font-size: 20px;
+    padding-top: 2px;
+    margin-bottom: 0;
+}
+
+.item h5{
+    font-family: 'Quicksand';
+    font-size: 15px;
+    padding-top: 2px;
+    margin-bottom: 2px;
+}
+
+.item h6{
+    font-family: 'Quicksand';
+    color: #00C389;
+}
+
+.item div{
+    background-color: #041421;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand';
+}
+
+.paginas{
+    clear: both;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.paginas a{
+    text-decoration: none;
+    background-color: #928f8f;
+    border: 6px solid #928f8f;
+    border-radius: 4px;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+}
+
+/*-------------------------------------------------------*/
+/*Rodapé*/
+footer{
+    background-color: #86B9B0;
+    margin-top: 10px;
+    font-family: 'Quicksand';
+    color: white;
+    padding: 5px 0 10px 0;
+    text-align: left;
+}
+
+footer ul{
+    list-style: none;
+    padding-bottom: 2px;
+}
+
+footer ul li{
+    float: left;
+    margin-left: -35px;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-right: 70px;
+    font-weight: 1000;
+}
