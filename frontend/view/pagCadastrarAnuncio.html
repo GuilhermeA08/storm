@@ -13,8 +13,7 @@
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
     </head>
 
@@ -65,12 +64,10 @@
                 <div class="card" style="width: 18rem; display: inline-block;">
                     <a href="../view/pagCatalogoCompra.html"><img class="card-img-top" src="../assets/images/kisspng-shopping-bag-cartoon-fashion-shopping-bags-5a810a5eab7012.5003817015184062387022.png" alt="Card image cap" style="padding: 40px;"></a>
                     <div class="card-body">
-                        <form>
                             <div class="form-group">
-                                <label for="adicionar-fotos">Adicionar Fotos</label>
-                                <input type="file" class="form-control form-control-sm" id="adicionar-fotos" multiple >
+                                <label for="adicionarFotos">Adicionar Fotos</label>
+                                <input type="file" class="form-control form-control-sm" id="adicionarFotos" multiple >
                             </div>
-                          </form>
                     </div>
                 </div>
 
@@ -111,7 +108,7 @@
                             <label for="data">Descrição do Produto:</label>
                             <textarea type="text" class="form-control" style="height: fit-content;">Uma descrição de produto fornece detalhes sobre recursos, indicações, utilizações e benefícios para ajudar a gerar uma venda.</textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="margin-top: 20px; background-color:green">Publicar Anúncio</button>
+                        <a href="pagDetalhesAnuncio.html"><button type="submit" class="btn btn-primary" style="margin-top: 20px; background-color:green" onclick="validarCadastroAnuncio()">Publicar Anúncio</button></a>
                       </form>
                 </div>
 
@@ -138,6 +135,9 @@
         </footer> <!--Fim do rodapé-->
 
     </body>
+
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <script src="../js/cadastroAnuncio.js" type="text/javascript"></script>
 
