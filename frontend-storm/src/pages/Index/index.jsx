@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Carousel from '../../components/Carousel';
 
 function Index() {
     return (
@@ -12,7 +13,7 @@ function Index() {
                 </div>
                 
                 <div className='principal'>
-
+                    <Carousel />
                 </div>
             </div>
             <Footer />
