@@ -1,13 +1,15 @@
 import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
-import Login from "../pages/Login";
+import Index from "../pages/Index/index";
+import Login from "../pages/Login/index"
 
 const Rotas = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Login />} path="/" exact></Route>
+        <Route element={<Index />} path="/" exact></Route>
+        <Route element={<Login />} path="/login" exact></Route>
       </Routes>
     </BrowserRouter>
   );
