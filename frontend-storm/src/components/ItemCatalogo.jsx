@@ -1,9 +1,13 @@
 import React from 'react';
 import '../assets/css/itemcatalogo.css'
+import sacola from '../assets/images/sacola.png.png'
+
 function ItemCatalogo(props) {
     return (
         <div className='item'>
-           <img src={props.imagem} alt="" className='imagem'/>
+            <div>
+            <img src={props.imagem? props.imagem : sacola} alt="" className='imagem'/>
+            </div>
            <div className='nome'>
                 <span>{props.nome}</span><br />
            </div>

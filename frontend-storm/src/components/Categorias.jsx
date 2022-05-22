@@ -1,15 +1,32 @@
-import React from "react";
-import "../assets/css/categorias.css";
+import React from 'react';
+import Categoria from './Categoria';
+import '../assets/css/categorias.css'
 
-const Categorias = (props) => {
-  const categoria = props.categoria;
+function Categorias(){
+    return(
+        <div style={{marginLeft:'26%'}}>
+        <div className='list'>
+            <Categoria />
+            <Categoria />
+            <Categoria />
+            <Categoria />
+            <Categoria />
+            <Categoria />
+            <Categoria />
+            <Categoria />
+        </div>
+        <div className='list'>
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+            </div>
+        </div>
 
-  return (
-    <div className="categoria">
-      <img className="categoria-img" src="image/sacola-de-compras-quadrada-com-alca.png" alt="" />
-      <p>{categoria}</p>
-    </div>
-  );
-};
-
-export default Categorias;
+    )
+}
+export default Categorias
