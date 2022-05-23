@@ -8,37 +8,42 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Carousel from "../../components/Carousel";
 import Categorias from "../../components/Categorias";
-import ItemCarrinho from "../../components/ItemCarrinho";
 
 function Index() {
   return (
     <div>
       <Navbar />
+
       <div className="body">
-        <div className="cabecalho">
-          <div>
-          <h1>Uma tempestade de ofertas!</h1>
-          <h2>Sem tempo de ir à uma loja? <br/>Não tem problema, agora você pode adquirir tudo que precisa pela internet!</h2>
-          <button>Entre ou cadastre-se!</button>
+
+          <div className="cabecalho">
+            <div>
+              <h1>Uma tempestade de ofertas!</h1>
+              <h2>Sem tempo de ir à uma loja? <br/>Não tem problema, agora você pode adquirir tudo que precisa pela internet!</h2>
+              <button onClick={"/login"}>Entre ou cadastre-se!</button>
+            </div>
+            <img src={topImage} alt="" style={{marginLeft:'300px'}} />
           </div>
-          <img src={topImage} alt="" style={{marginLeft:'300px'}} />
-        </div>
-        <div className="cabecalho2">
-        <div className="itemCabecalho2">
-        <img src={caminhao} alt="" style={{marginLeft:'300px', height:'100px'}}></img>
-        <h1>Entrega Rápida</h1>
-        <h2>Entregas a partir de 2 dias!</h2>
-        </div>
-        <div className="itemCabecalho2">
-        <img src={garantia} alt="" style={{marginLeft:'350px', height:'100px'}} />
-        <h1>Segurança Garantida</h1>
-        <h2>Todo processo de compra feito<br/> com a maior segurança!</h2>
-        </div>
-        <div className="itemCabecalho2">
-        <img src={suporte} alt="" style={{marginLeft:'320px', height:'100px'}} />
-        <h1>Suporte ao Cliente</h1>
-        <h2>Atendimento 24h</h2>
-        </div>
+
+          <div className="cabecalho2">
+            <div className="itemCabecalho2">
+              <img src={caminhao} alt="" style={{marginLeft:'300px', height:'100px'}}></img>
+              <h1>Entrega Rápida</h1>
+              <h2>Entregas a partir de 2 dias!</h2>
+          </div>
+
+          <div className="itemCabecalho2">
+            <img src={garantia} alt="" style={{marginLeft:'350px', height:'100px'}} />
+            <h1>Segurança Garantida</h1>
+            <h2>Todo processo de compra feito<br/> com a maior segurança!</h2>
+          </div>
+
+          <div className="itemCabecalho2">
+            <img src={suporte} alt="" style={{marginLeft:'320px', height:'100px'}} />
+            <h1>Suporte ao Cliente</h1>
+            <h2>Atendimento 24h</h2>
+          </div>
+
         </div>
 
         <div className="principal" style={{ width: "100%" }}>
@@ -51,6 +56,7 @@ function Index() {
           <h1 style={{backgroundColor:'white', textAlign:'center', color:'#042630'}}>Categorias</h1>
           <Categorias />
         </div>
+
       </div>
       <Footer />
     </div>

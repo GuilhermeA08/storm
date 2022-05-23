@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavbarLogin from "../../components/NavbarLogin";
 import '../Login/login.css'
 
-const Login = () => {
+function Login() {
   return(
     <div className="corpo">
 
@@ -31,9 +31,12 @@ const Login = () => {
             <div className="botao">
               <Link className="Link" to="">Entrar</Link>
             </div>
+            
+            <label>É novo por aqui? <Link className="Link" to="/cadastro">Cadastre-se</Link></label>
+          
           </div>
+
         </div>
-       
 
       </div>
       

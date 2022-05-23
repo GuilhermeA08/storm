@@ -39,11 +39,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .left .formulario h1{
     font-family: Cubos;
     font-size: 50px;
+}
+
+.left .formulario h6{
+    font-family: Quicksand;
+    font-size: 20px;
 }
 
 .left .formulario .areaFormulario{
@@ -56,11 +62,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: start;
 }
 
 .left .formulario .areaFormulario h1{
     font-family: Quicksand;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 40px;
 }
 
@@ -68,12 +75,20 @@
     color: #00c389;
 }
 
-.left .formulario .areaFormulario .email label, .left .formulario .areaFormulario .senha label{
+.left .formulario .areaFormulario .nome label, 
+.left .formulario .areaFormulario .sobrenome label, 
+.left .formulario .areaFormulario .cpf label, 
+.left .formulario .areaFormulario .email label, 
+.left .formulario .areaFormulario .senha label{
     font-family: Quicksand;
     font-size: 20px;
 }
 
-.left .formulario .areaFormulario .email, .left .formulario .areaFormulario .senha{
+.left .formulario .areaFormulario .nome, 
+.left .formulario .areaFormulario .sobrenome, 
+.left .formulario .areaFormulario .cpf,
+.left .formulario .areaFormulario .email, 
+.left .formulario .areaFormulario .senha{
     width: 75%;
 }
 
@@ -84,32 +99,4 @@
     border-radius: 20px;
     font-size: 20px;
     padding-left: 10px;
-}
-
-.left .formulario .areaFormulario .botao{
-    background-color: #041421;
-    width: 120px;
-    height: 30px;
-    border-radius: 15px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left .formulario .areaFormulario .botao .Link{
-    color: #fff;
-    text-decoration: none;
-    font-family: Quicksand;
-    font-size: 20px;
-}
-
-.left .formulario .areaFormulario label{
-    font-family: Quicksand;
-    font-size: 20px;
-    margin-top: 15px;
-}
-
-.left .formulario .areaFormulario label .Link{
-    text-decoration: none;
 }
