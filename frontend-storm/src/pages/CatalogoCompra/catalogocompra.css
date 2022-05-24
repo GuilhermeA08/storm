@@ -1,0 +1,14 @@
+.corpo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo{
+    background-image: url("../../assets/images/topo1.png");
+    background-position: 0px -250px;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 850px;
+}

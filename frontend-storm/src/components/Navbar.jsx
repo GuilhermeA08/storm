@@ -8,6 +8,8 @@ const Navbar = () => {
         <h1 className='logo'>Storm</h1>
 
         <div className="navegacao">
+          <input className="pesquisa" type="text" placeholder="O que você vai comprar hoje?" />
+
           <ul>
               <li><Link className="Link" to="/">home</Link></li>
               <li><Link className="Link destaque" to="">comprar</Link></li>

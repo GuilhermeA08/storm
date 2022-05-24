@@ -40,7 +40,7 @@ function Login() {
 }
 
   return(
-    <div className="corpo">
+    <div className="corpoLogin">
 
       <div className="right"></div>
 

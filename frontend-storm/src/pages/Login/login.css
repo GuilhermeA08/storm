@@ -15,7 +15,7 @@
 }
 
 /*-----Login-----*/
-.corpo{
+.corpoLogin{
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -25,15 +25,15 @@
     width: 55%;
     height: 100%;
     background-image: url(../../assets/images/fundo\ login.png);
-    background: no-repeat;
+    background-size: cover;
 }
 
-.left{
+.corpoLogin .left{
     width: 45%;
     height: 100%;
 }
 
-.left .formulario{
+.corpoLogin .left .formulario{
     width: 100%;
     height: 95%;
     display: flex;
@@ -42,12 +42,12 @@
     align-items: center;
 }
 
-.left .formulario h1{
+.corpoLogin .left .formulario h1{
     font-family: Cubos;
     font-size: 50px;
 }
 
-.left .formulario .areaFormulario{
+.corpoLogin .left .formulario .areaFormulario{
     background-color: #fff;
     width: 80%;
     height: 80%;
@@ -59,26 +59,26 @@
     align-items: center;
 }
 
-.left .formulario .areaFormulario h1{
+.corpoLogin .left .formulario .areaFormulario h1{
     font-family: Quicksand;
     font-size: 35px;
     margin-bottom: 40px;
 }
 
-.left .formulario .areaFormulario h1 strong{
+.corpoLogin .left .formulario .areaFormulario h1 strong{
     color: #00c389;
 }
 
-.left .formulario .areaFormulario .email label, .left .formulario .areaFormulario .senha label{
+.corpoLogin .left .formulario .areaFormulario .email label, .left .formulario .areaFormulario .senha label{
     font-family: Quicksand;
     font-size: 20px;
 }
 
-.left .formulario .areaFormulario .email, .left .formulario .areaFormulario .senha{
+.corpoLogin .left .formulario .areaFormulario .email, .left .formulario .areaFormulario .senha{
     width: 75%;
 }
 
-.left .formulario .areaFormulario  input{
+.corpoLogin .left .formulario .areaFormulario  input{
     width: 100%;
     height: 35px;
     border: 1px solid #000;
@@ -87,7 +87,7 @@
     padding-left: 10px;
 }
 
-.left .formulario .areaFormulario .botao{
+.corpoLogin .left .formulario .areaFormulario .botao{
     background-color: #041421;
     width: 120px;
     height: 30px;
@@ -101,19 +101,19 @@
     cursor: pointer;
 }
 
-.left .formulario .areaFormulario .botao .Link{
+.corpoLogin .left .formulario .areaFormulario .botao .Link{
     color: #fff;
     text-decoration: none;
     font-family: Quicksand;
     font-size: 20px;
 }
 
-.left .formulario .areaFormulario label{
+.corpoLogin .left .formulario .areaFormulario label{
     font-family: Quicksand;
     font-size: 20px;
     margin-top: 15px;
 }
 
-.left .formulario .areaFormulario label .Link{
+.corpoLogin .left .formulario .areaFormulario label .Link{
     text-decoration: none;
 }

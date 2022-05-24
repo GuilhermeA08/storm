@@ -5,7 +5,7 @@ import '../Cadastro/cadastro.css';
 
 function Cadastro() {
     return (
-        <div className='corpo'>
+        <div className='corpoCadastro'>
             <div className='right'></div>
 
             <div className='left'>
