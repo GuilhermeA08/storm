@@ -1,9 +1,44 @@
-import React from "react";
+import React, {useState} from "react";
+import supabase from "../../services/api";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import NavbarLogin from "../../components/NavbarLogin";
 import '../Login/login.css'
 
 function Login() {
+
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  async function handleLogin(e){
+
+    e.preventDefault();
+
+    const usu = {email,password};
+    try{
+      let { data: user, error, status } = await supabase
+      .from('tb_users')
+      .select(`email, password`)
+      .eq('email', usu.email)
+      .eq('password',usu.password)
+      .single()
+
+    if (error && status !== 406) {
+      throw error
+    }
+
+    if (user) {
+      navigate('/')
+    }else{
+      alert("Login ou senha inválidos!")
+    }
+  } catch (error) {
+    alert("Login ou senha inválidos!")
+  }
+}
+
   return(
     <div className="corpo">
 
@@ -12,7 +47,7 @@ function Login() {
       <div className="left">
         <NavbarLogin />
 
-        <div className="formulario">
+        <form className="formulario" onSubmit={handleLogin}>
           <h1>storm</h1>
 
           <div className="areaFormulario">
@@ -20,23 +55,21 @@ function Login() {
 
             <div className="email">
               <label for="floatingEmail">Email</label><br />
-              <input type="email" id="floatingEmail"/>
+              <input type="email" id="floatingEmail" value={email} onChange={e => setEmail(e.target.value)}/>
             </div>
 
             <div className="senha">
               <label for="floatingAssunto">Senha</label><br />
-              <input type="password" id="floatingPassword"/>
+              <input type="password" id="floatingPassword" value={password} onChange={e => setPassword(e.target.value)}/>
             </div>
 
-            <div className="botao">
-              <Link className="Link" to="">Entrar</Link>
-            </div>
+              <button className="botao" type="submit" >Entrar</button>
             
             <label>É novo por aqui? <Link className="Link" to="/cadastro">Cadastre-se</Link></label>
           
           </div>
 
-        </div>
+        </form>
 
       </div>
       

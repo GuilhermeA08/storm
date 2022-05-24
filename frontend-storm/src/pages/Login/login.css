@@ -25,6 +25,7 @@
     width: 55%;
     height: 100%;
     background-image: url(../../assets/images/fundo\ login.png);
+    background: no-repeat;
 }
 
 .left{
@@ -95,6 +96,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-family: Quicksand;
+    cursor: pointer;
 }
 
 .left .formulario .areaFormulario .botao .Link{

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './index.css';
 import suporte from "../../assets/images/suporte-tecnico.png"
 import caminhao from "../../assets/images/caminhao-de-entrega.png"
@@ -20,7 +21,8 @@ function Index() {
             <div>
               <h1>Uma tempestade de ofertas!</h1>
               <h2>Sem tempo de ir à uma loja? <br/>Não tem problema, agora você pode adquirir tudo que precisa pela internet!</h2>
-              <button onClick={"/login"}>Entre ou cadastre-se!</button>
+              <Link className="Link" to="/login"><button>Entre ou cadastre-se!</button></Link>
+              
             </div>
             <img src={topImage} alt="" style={{marginLeft:'300px'}} />
           </div>
