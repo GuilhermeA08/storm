@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a6736967a10eb9a37d58",
+    "revision": "02e73f0e0a06e26891df",
     "url": "/static/css/main.f447c4fb.chunk.css"
   },
   {
-    "revision": "a6736967a10eb9a37d58",
-    "url": "/static/js/main.a6736967.chunk.js"
+    "revision": "02e73f0e0a06e26891df",
+    "url": "/static/js/main.02e73f0e.chunk.js"
   },
   {
     "revision": "01e4d3ca527e17b58fbb",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/media/fundo login.cc36885b.png"
   },
   {
-    "revision": "1dbbe04100b5685385d31c46bf552048",
+    "revision": "a6fb6c1fa6ac87de7a38f56f020340db",
     "url": "/index.html"
   }
 ];
