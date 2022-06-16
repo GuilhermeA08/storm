@@ -4,7 +4,7 @@ import icone from  '../assets/images/sacola-de-compras-quadrada-com-alca.png'
 
 function Categoria(props){
     return(
-        <div className='container'>
+        <div className='categoria'>
             <div>
             <img src={props.image? props.image : icone} alt="" className='icon'/>
             </div>

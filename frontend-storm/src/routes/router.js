@@ -5,6 +5,7 @@ import Index from "../pages/Index/index";
 import Login from "../pages/Login/index";
 import Cadastro from "../pages/Cadastro/index";
 import CatalogoCompra from "../pages/CatalogoCompra/index"
+import Catalogo from "../pages/Catalogo/index"
 
 const Rotas = () => {
   return (
@@ -14,6 +15,7 @@ const Rotas = () => {
         <Route element={<Login />} path="/login" exact></Route>
         <Route element={<Cadastro />} path="/cadastro" exact></Route>
         <Route element={<CatalogoCompra />} path="/catalogoCompra" exact></Route>
+        <Route element={<Catalogo />} path="/catalogo" exact></Route>
       </Routes>
     </BrowserRouter>
   );

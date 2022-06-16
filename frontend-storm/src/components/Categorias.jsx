@@ -4,18 +4,18 @@ import '../assets/css/categorias.css'
 
 function Categorias(){
     return(
-        <div style={{marginLeft:'26%'}}>
-        <div className='list'>
-            <Categoria />
-            <Categoria />
-            <Categoria />
-            <Categoria />
-            <Categoria />
-            <Categoria />
-            <Categoria />
-            <Categoria />
-        </div>
-        <div className='list'>
+        <div>
+            <div className='list'>
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+                <Categoria />
+            </div>
+            <div className='list'>
                 <Categoria />
                 <Categoria />
                 <Categoria />
