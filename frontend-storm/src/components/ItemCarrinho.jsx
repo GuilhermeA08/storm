@@ -11,7 +11,7 @@ const ItemCarrinho = (props) => {
       <img className="imageProduto" src="image/sacola.png" alt="" />
       <div className="descricaoProduto">
         <p>{nomeProduto}</p>
-        <p>{preco}</p>
+        <p>R$ {preco}</p>
         <div className="bottomProduto">
           <p>{numParcelas}</p>
           <img className="bottomProduto-img" src="image/lata-de-lixo 1.png" alt="" />
