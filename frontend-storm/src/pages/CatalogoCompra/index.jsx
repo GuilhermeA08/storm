@@ -28,13 +28,13 @@ function CatalogoCompra(props) {
             <img src="image/caminhao-de-entrega.png" alt="" /> entrega grátis
           </h3>
           <div className="adicionar-carrinho">
-            <a href="pagCarrinho.html" class="btn btn-outline-dark">
+            <a href="carrinho" class="btn btn-outline-dark">
               Adicionar ao Carrinho
             </a>
           </div>
 
           <div className="comprar-agora">
-            <a href="pagCarrinho.html" class="btn btn-success">
+            <a href="carrinho" class="btn btn-success">
               Comprar Agora
             </a>
           </div>

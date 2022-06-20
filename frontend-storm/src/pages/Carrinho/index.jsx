@@ -27,16 +27,20 @@ function Carrinho() {
             <div className='dadosProduto'>
                 <div>
                     <h1>Entrega</h1>
-                    <input type="radio" /> Entrega 1 : Gratis <br />
-                    <input type="radio" /> Entrega 2 : R$ 10,00
+                    <input type="radio" id="entrega1" name="entrega" value="Entrega 1: Grátis"/>
+                    <label for="entrega1">Entrega 1: Grátis</label><br />
+                    <input type="radio" id="entrega2" name="entrega" value="Entrega 2: R$ 10,00"/>
+                    <label for="entrega2"> Entrega 2: R$ 10,00</label>
                 </div>
 
                 <hr />
 
                 <div>
                     <h1>Pagamento</h1>
-                    <input type="radio" /> Boleto<br />
-                    <input type="radio" /> Cartão de credito : até 10X sem juros
+                    <input type="radio" id="boleto" name="pagamento" value="Boleto Bancário"/>
+                    <label for="boleto">Boleto Bancário</label><br />
+                    <input type="radio" id="cartao" name="pagamento" value="Cartão de Crédito : até 10X sem juros"/>
+                    <label for="cartao"> Cartão de Crédito : até 10X sem juros</label>
                 </div>
 
                 <button className='finalizarCompra'>Finalizar pagamento</button>
